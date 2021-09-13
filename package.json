@@ -1,6 +1,6 @@
 {
   "name": "nestjs-what3words",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "What3Words module for NestJS",
   "keywords": [
     "nestjs",
