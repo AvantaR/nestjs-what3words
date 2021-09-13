@@ -6,12 +6,9 @@ export interface What3WordsOptionsFactory {
 }
 
 export type What3WordsOptions = ApiOptions;
-export interface What3WordsAsyncOptions
-  extends Pick<ModuleMetadata, 'imports'> {
+export interface What3WordsAsyncOptions extends Pick<ModuleMetadata, 'imports'> {
   inject?: any[];
   useExisting?: Type<What3WordsOptionsFactory>;
   useClass?: Type<What3WordsOptionsFactory>;
-  useFactory?: (
-    ...args: any[]
-  ) => Promise<What3WordsOptions> | What3WordsOptions;
+  useFactory?: (...args: any[]) => Promise<What3WordsOptions> | What3WordsOptions;
 }
