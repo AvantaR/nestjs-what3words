@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import * as api from '@what3words/api';
-import { WHAT_3_WORDS_OPTIONS } from 'what3words.constants';
-import { What3WordsOptions } from 'what3words.interface';
+import { WHAT_3_WORDS_OPTIONS } from './what3words.constants';
+import { What3WordsOptions } from './what3words.interface';
 
 @Injectable()
 export class What3WordsService {

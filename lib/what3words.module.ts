@@ -1,7 +1,7 @@
 import { DynamicModule, Module, Provider } from '@nestjs/common';
-import { WHAT_3_WORDS_OPTIONS } from 'what3words.constants';
-import { What3WordsAsyncOptions, What3WordsOptions, What3WordsOptionsFactory } from 'what3words.interface';
-import { What3WordsService } from 'what3words.service';
+import { WHAT_3_WORDS_OPTIONS } from './what3words.constants';
+import { What3WordsAsyncOptions, What3WordsOptions, What3WordsOptionsFactory } from './what3words.interface';
+import { What3WordsService } from './what3words.service';
 
 @Module({})
 export class What3WordsModule {
