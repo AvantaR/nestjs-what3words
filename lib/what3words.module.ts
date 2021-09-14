@@ -17,6 +17,7 @@ export class What3WordsModule {
     return {
       module: What3WordsModule,
       providers: this.createProviders(options),
+      imports: options.imports || [],
       exports: [What3WordsService],
     };
   }
